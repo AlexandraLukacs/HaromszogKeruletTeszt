@@ -2,15 +2,14 @@ package haromszogkerulet;
 
 public class Kerulet {
     public static void main(String[] args) {
-        haromszogKerulete(2, -1, 2);
+        
     }
     
     public static int haromszogKerulete(int a, int b, int c) {
-        if (a < 0 || b < 0 || c < 0 ){
+        if (a+b <= c || a+c <= b || b+c <= a){
             return -1;
         }else{
-            int kerulet = a + b + c;
-            return kerulet;
+            return a + b + c;
         }
     }
     
